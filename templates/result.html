@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div><center>
+<div class="ex1">
+<table style="height: 10px; border-style: solid; align-items: center; justify-content: center; border-color: black;">
+<tbody>
+<tr>
+<td style="width: 598px;"><img style="text-align: center; display: block; margin-left: auto; margin-right: auto;" src="https://www.dropbox.com/s/dpwnwox65ixo88a/uni.jpg?raw=1" alt="University" width="500" height="250" border="3" /><header>
+<div class="container"><center>Normal and Glaucoma Detection over your file</center><center>please note, our application only predict the first record of your file.</center></div>
+</header>
+<p style="color: blue; font-size: 20; text-align: center;"><strong>Results for your file is: </strong></p>
+<div class="results">{% if prediction_disease ==1 %}<br />
+<table style="margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td>
+<h2 style="text-align: center;"><span style="color: #ff0000;">Glaucoma</span></h2>
+</td>
+<td>
+<h2><img style="display: block; margin-left: auto; margin-right: auto;" src="https://www.dropbox.com/s/n1hvg8omvdmq0zv/glaucoma.jpg?raw=1" alt="Female" width="150" height="80" /></h2>
+</td>
+</tr>
+</tbody>
+</table>
+{% elif prediction_disease == 0%}</div>
+<div class="results">
+<table style="margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td>
+<h2><span style="color: #00ff00;">Normal</span></h2>
+</td>
+<td>
+<h2><img src="https://www.dropbox.com/s/nhxtcjqvb9qxns7/glaucoma-normal.jpg?raw=1" alt="Female" width="150" height="80" /></h2>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="results">{% endif %} {% if prediction_gender ==1 %}</div>
+<div class="results">&nbsp;</div>
+<div class="results">
+<table style="margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td>
+<h2><span style="color: #0000ff;">Male</span></h2>
+</td>
+<td>
+<h2><img src="https://www.dropbox.com/s/04caqhe3yj027p5/male.png?raw=1" alt="male" width="150" height="80" /></h2>
+</td>
+</tr>
+</tbody>
+</table>
+{% elif prediction_gender == 0%}</div>
+<div class="results">&nbsp;</div>
+<div class="results">
+<table style="margin-left: auto; margin-right: auto;" border="2">
+<tbody>
+<tr>
+<td>
+<h2><span style="color: #ff00ff;">Female</span></h2>
+</td>
+<td>
+<h2><img src="https://www.dropbox.com/s/7d14n4z75z1hzaf/Female.png?raw=1" alt="Female" width="150" height="80" /></h2>
+</td>
+</tr>
+</tbody>
+</table>
+<p>{% endif %}</p>
+</div>
+
+
+  <button onclick="myFunction()">Print this page</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+
+
+
+<button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+<p style="text-align: center;"><strong>Note: V1.1.1</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</center></div>
+</body>
+</html>
